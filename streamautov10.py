@@ -1,5 +1,5 @@
 # streamautov10_public.py
-# Versión pública para GitHub - Sin sistema de licencias
+# Versión pública
 
 import obspython as obs
 import threading
@@ -824,4 +824,5 @@ def script_update(settings):
     print(f"🔄 Configuration updated (validations in timer)")
 
 def script_defaults(settings):
+
     obs.obs_data_set_string(settings, "escena", obs.obs_data_get_string(settings, "escena"))
