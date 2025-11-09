@@ -1,58 +1,49 @@
-# Stream-Automator-Pro
-Automatic game detection and real-time updates for Twitch and Kick
+# 🎮 Stream-Automator-Pro
 
+**Automatic game detection and real-time stream updates for Twitch and Kick**
 
-Would work perfectly if you configure localhost and the callbacks correctly for both Twitch and Kick. Here's how:
+---
 
-✅ Functionality with Localhost
-🔧 Required Configuration:
-Local server:
+## 🚀 Live Version
 
-python
-SERVIDOR_BASE = "http://localhost:3000"    # or your preferred port
-SERVIDOR_SHEETS = "http://localhost:3000"  # same server
-Twitch App Callbacks:
+**For a fully functional version with 5-minute setup tutorial:**
+🔗 **https://kainanteh.es/**
 
-text
-http://localhost:3000/twitch/callback
-Kick App Callbacks:
+---
 
-text
-http://localhost:3000/kick/callback
-🚀 Flow that WOULD work:
-Twitch Connection:
+## 🛠️ Self-Hosting Configuration
 
-"Connect with Twitch" button → http://localhost:3000/twitch/auth
+```python
+# Server Configuration
+SERVIDOR_BASE = "http://localhost:3000"
+SERVIDOR_SHEETS = "http://localhost:3000"
 
-Twitch redirects to localhost:3000/twitch/callback with code
+# Callback URLs
+TWITCH_CALLBACK = "http://localhost:3000/twitch/callback"
+KICK_CALLBACK = "http://localhost:3000/kick/callback"
 
-Local server exchanges code for token
+# API Endpoints
+TWITCH_AUTH = f"{SERVIDOR_BASE}/twitch/auth"
+TWITCH_SET_USER = f"{SERVIDOR_BASE}/api/twitch/set_user_id"
+TWITCH_UPDATE = f"{SERVIDOR_BASE}/api/twitch/update_stream"
+KICK_AUTH = f"{SERVIDOR_SHEETS}/auth/kick"
+KICK_SET_USER = f"{SERVIDOR_SHEETS}/api/set_user_id"
+KICK_UPDATE = f"{SERVIDOR_SHEETS}/api/update_stream"
+SHEET_CONFIG = f"{SERVIDOR_SHEETS}/api/get_sheet_config"
 
-User copies user_code and pastes it in OBS
+# Features
+# - Automatic window/game detection
+# - Real-time Twitch & Kick stream updates
+# - Google Sheets integration
+# - Scene-based activation system
+# - Debounce timer optimization
 
-Kick Connection:
+# Setup Workflow
+# 1. Configure local server with above endpoints
+# 2. Set up Twitch/Kick apps with callback URLs
+# 3. Install OBS script and connect accounts
+# 4. Configure Google Sheets for game titles/categories
+# 5. Start streaming with automatic updates
 
-Same process with Kick endpoints
-
-Automatic Detection:
-
-Script detects windows/games
-
-Queries Google Sheets via your local server
-
-Updates stream on Twitch/Kick through APIs
-
-🔍 Endpoints the script needs:
-python
-# Twitch endpoints
-f"{SERVIDOR_BASE}/twitch/auth"                    # Start auth
-f"{SERVIDOR_BASE}/api/twitch/set_user_id"         # Verify user  
-f"{SERVIDOR_BASE}/api/twitch/update_stream"       # Update stream
-
-# Kick endpoints  
-f"{SERVIDOR_SHEETS}/auth/kick"                    # Start auth
-f"{SERVIDOR_SHEETS}/api/set_user_id"              # Verify user
-f"{SERVIDOR_SHEETS}/api/update_stream"            # Update stream
-
-# Google Sheets
-f"{SERVIDOR_SHEETS}/api/get_sheet_config"         # G
+# Quick Deployment
+# For full functionality visit: https://kainanteh.es/
