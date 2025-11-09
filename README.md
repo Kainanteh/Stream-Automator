@@ -6,7 +6,7 @@
 
 ## 🚀 Live Version
 
-**For a fully alredy connected version with 5-minute setup tutorial:**
+**For a fully already connected version with 5-minute setup tutorial:**
 🔗 **https://kainanteh.es/**
 
 ---
@@ -48,4 +48,4 @@ SHEET_CONFIG = f"{SERVIDOR_SHEETS}/api/get_sheet_config"
 # 5. Start streaming with automatic updates
 
 # Quick Deployment
-# For full functionality visit: https://kainanteh.es/
+# For fully already connected visit: https://kainanteh.es/
