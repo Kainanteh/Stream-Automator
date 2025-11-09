@@ -13,6 +13,8 @@
 
 ## 🛠️ Self-Hosting Configuration
 
+If you want do it yourself :
+
 ```python
 # Server Configuration
 SERVIDOR_BASE = "http://localhost:3000"
