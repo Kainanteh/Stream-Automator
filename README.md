@@ -1,4 +1,4 @@
-# 🎮 Stream-Automator-Pro
+# 🎮 Stream-Automator
 
 **Automatic game detection and real-time stream updates for Twitch and Kick**
 
