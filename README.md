@@ -6,7 +6,7 @@
 
 ## 🚀 Live Version
 
-**For a fully functional version with 5-minute setup tutorial:**
+**For a fully alredy connected version with 5-minute setup tutorial:**
 🔗 **https://kainanteh.es/**
 
 ---
