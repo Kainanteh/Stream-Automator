@@ -17,8 +17,8 @@ ssl._create_default_https_context = ssl._create_unverified_context
 # Global variables - TODAS EN ESPAÑOL COMO ORIGINAL
 ESCENA_OBJETIVO = ""
 INTERVALO_CHECK = 1.0
-SERVIDOR_BASE = "https://your-domain.com"  # URL genérica
-SERVIDOR_SHEETS = "https://your-domain.com"  # URL genérica
+SERVIDOR_BASE = "https://"  # URL genérica your domain
+SERVIDOR_SHEETS = "https://"  # URL genérica your domain
 USER_CODE_TWITCH = ""
 USER_CODE_KICK = ""
 TWITCH_USERNAME = ""
