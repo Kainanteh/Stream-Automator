@@ -11,6 +11,12 @@
 
 ---
 
+## 🚀 Youtube Example
+
+🔗 **https://www.youtube.com/watch?v=Df2yBuWnGk0&list=PLc-VpXTLuf9GgbEPLorf1d7sSXeFqBmd5&index=1**
+
+---
+
 ## 🛠️ Self-Hosting Configuration
 
 If you want do it yourself :
