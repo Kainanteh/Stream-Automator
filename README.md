@@ -1,6 +1,6 @@
 # 🎮 Stream-Automator
 
-**Automatic game detection and real-time stream updates for Twitch and Kick**
+**Stream-Automator is a powerful Python script that automatically detects when you switch to your gaming scene, activates the specific window capture source, and updates your stream title and category in real-time across both Twitch and Kick platforms - all managed through your Google Sheets configuration.**
 
 ---
 
