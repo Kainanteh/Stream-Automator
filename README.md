@@ -9,6 +9,8 @@
 **For a fully already connected version with 5-minute setup tutorial:**
 🔗 **https://kainanteh.es/**
 
+¡REMOVED! If you are interested contact me
+
 ---
 
 ## 🚀 Youtube Example
